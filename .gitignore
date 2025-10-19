@@ -1,0 +1,73 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which are likely to contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used to override resources locally
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# SSH Keys (you have .pem and .ppk files)
+*.pem
+*.ppk
+*.key
+
+# Lock files (optional - some teams commit this)
+# .terraform.lock.hcl
+
+# Environment files
+.env
+.env.*
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python files (if using Python for Lambda)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Node modules (if using Node.js)
+node_modules/
+
+# Logs
+*.log
+
+# Backup files
+*.backup
+*.bak
+
+# Zip files (Lambda deployment packages)
+*.zip
+
+
+# Exclude all Lambda dependencies but keep the function
+assets/lambda_function/*
+!assets/lambda_function/lambda_function.py
+!assets/lambda_function/requirements.txt
+!assets/lambda_function/.gitkeep
